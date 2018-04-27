@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+
+@protocol MyDelegateProtocol
+
+- (void)myFunction;
+
+@end
+
+
+@interface ViewController : UIViewController <MyDelegateProtocol>
 
 
 @end
